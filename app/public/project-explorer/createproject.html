@@ -22,28 +22,23 @@
             <a href="createproject.html">Submit</a>
         </nav>
         <main>
-            <h1>Submit Project</h1>
+            <h2>Submit Project</h2>
+            <!-- 
+          The <br /> tags are used temporily to achieve a vertical layout i.e to the make
+          the label appear on top of the inputs rather than on the same line i.e horizontally.
+          This will be fixed later with CSS.
+       -->
             <form name="submitProject">
-                <label for="Project-title">Project Title:</label>
-                <br />
-                <input type="text" name="" id="" />
-                <br /><br />
-                <label for="Project-abstract">Project Abstract:</label>
-                <br />
-                <textarea type='text' name="abstract" id=""></textarea>
-                <br /><br />
-                <label for="authors">Authors:</label>
-                <br />
-                <input type="text" name="authors" id="" />
-                <br /><br />
-
-                <label for="tags">Tag(s):</label>
-                <br />
-                <input type="text" name="tags" id="" />
-                <br /><br />
-                <input type="submit" value="Submit" />
+                <label for="name">Project Name:</label><br />
+                <input type="text" name="name" /><br /><br />
+                <label for="abstract">Project Abstract:</label><br />
+                <textarea name="abstract"></textarea><br /><br />
+                <label for="authors">Authors:</label><br />
+                <input type="text" name="authors" /><br /><br />
+                <label>Tag(s):</label><br />
+                <input type="text" name="tags" /><br /><br />
+                <input type="submit" />
             </form>
-
         </main>
     </body>
 </html>
