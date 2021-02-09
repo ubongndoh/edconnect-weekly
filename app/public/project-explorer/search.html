@@ -1,59 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
+
     <body>
-        <header>
-            <h1>
-                Project Explorer
-            </h1>
-            <h2>
-                One Stop Database For Academic Projects
-            </h2>
-        </header>
-        <nav>
-            <a href="index.html"> Home</a>
-            <a href="search.html">Projects</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-            <a href="createproject.html">Submit</a>
+        <nav class="navbar navbar-expand-sm bg-primary">
+            <h1 class="text-light title">Project Explorer</h1>
+            <!-- <h2>One Stop Database for Final Year Projects</h2> -->
+            <form action="" class="form-inline">
+                <input type="search" placeholder="Search Projects" class="form-control mr-sm-2" />
+                <button type="submit" class="btn nav-button">
+                    Search
+                </button>
+            </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="viewProject.html " class="nav-link text-white-50">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="createProject.html" class="nav-link text-white-50">Submit</a>
+                </li>
+            </ul>
+
+            <li class="nav-item">
+                <a href="login.html" class="nav-link text-white-50">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="register.html" class="nav-link text-white-50">Sign Up</a>
+            </li>
         </nav>
-        <main>
-            <div>
-                <h2>Search Project By</h2>
-                <form name="searchForm">
-                    <input type="text" name="searchTerm" id="" placeholder="Project Name, Authors, Abstract, Tags" />
-                    <br /><br />
-                    <select name="searchType" id="">
-                        <option value="Name">Name</option>
-                        <option value="Abstract">Abstract</option>
-                        <option value="Authors">Authors</option>
-                        <option value="Tags">Tags</option>
-                    </select>
-                    <br /><br />
-                    <input type="submit" value="Search" />
-                </form>
-            </div>
-            <div>
-                <h2>Search Result</h2>
-                <h3>Project 4</h3>
-                <ul>
-                    <li>Name: Project 4</li>
-                    <li>
-                        Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Culpa rerum distinctio illum dolorum cum, voluptates inventore
-                        necessitatibus in porro impedit quo praesentium, modi accusamus
-                        blanditiis expedita maxime atque nihil adipisci.
-                    </li>
-                    <li>Program: Computer Science</li>
-                    <li>Authors: John Doe, Brian James</li>
-                    <li>Tag(s): #HTMl, #GSW</li>
-                    <li>Year : 2018</li>
+        <br />
+        <br />
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <br />
+            <div class="custom-jumbotron">
+                <ul class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Search project name, author, abstract, tags"
+                            class="form-control" />
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn">
+                            Search by
+                        </button>
+                    </div>
+                    <div class="">
+                        <select name="program" class="form-control">
+                            <option value="name">name</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn btn-primary">
+                            Search by
+                        </button>
+                    </div>
                 </ul>
             </div>
-        </main>
+            <div class="row">
+                <h2>All Projects</h2>
+                <p>(3 results)</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 card text-left">
+                    <div class="card-body project-list">
+                        <h3 class="text-primary">Project 1</h3>
+
+                        <li>Larry James, Bola IGE</li>
+                        <p>
+                            Description: Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Culpa rerum distinctio illum dolorum cum, voluptates
+                            inventore necessitatibus in porro impedit quo praesentium, modi
+                            accusamus blanditiis expedita maxime atque nihil adipisci.
+                        </p>
+                        <li class="text-primary">
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#Javascript</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 card text-left">
+                    <div class="card-body project-list">
+                        <h3 class="text-primary">Project 2</h3>
+
+                        <li>Ben Bruce, John Boe</li>
+                        <p>
+                            Description: Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Culpa rerum distinctio illum dolorum cum, voluptates
+                            inventore necessitatibus in porro impedit quo praesentium, modi
+                            accusamus blanditiis expedita maxime atque nihil adipisci.
+                        </p>
+                        <li class="text-primary">
+                            <a href="" class="card-link">#css</a>
+                            <a href="" class="card-link"> #html</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-left card">
+                    <div class="card-body project-list">
+                        <h3 class="text-primary">Project 3</h3>
+
+                        <li>Fried Lim, Tola Daniel</li>
+                        <p>
+                            Description: Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Culpa rerum distinctio illum dolorum cum, voluptates
+                            inventore necessitatibus in porro impedit quo praesentium, modi
+                            accusamus blanditiis expedita maxime atque nihil adipisci.
+                        </p>
+                        <li class="text-primary">
+                            <a href="" class="card-link">#ejs</a>
+                            <a href="" class="card-link">#Nodejs</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <footer>Project Explorer &copy 2020 <strong>Edconnect</strong></footer>
     </body>
 </html>
