@@ -1,96 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profile</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body>
-        <header>
-            <h1>
-                Project Explorer
-            </h1>
-            <h2>
-                One Stop Database For Academic Projects
-            </h2>
-        </header>
-        <nav>
-            <a href="index.html"> Home</a>
-            <a href="search.html">Projects</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-            <a href="createproject.html">Submit</a>
-        </nav>
-        <main>
-            <div>
-                <h3>John Doe</h3>
-                <p>johndoe@gmail.com</p>
 
-                <ul>
-                    <li>Program: Software Engineering</li>
-                    <li>Matriculation: 00/0000</li>
-                    <li>Graduation Year: 2020</li>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-primary">
+            <h1 class="text-light title">Project Explorer</h1>
+            <!-- <h2>One Stop Database for Final Year Projects</h2> -->
+            <form action="" class="form-inline">
+                <input type="search" placeholder="Search Projects" class="form-control mr-sm-2" />
+                <button type="submit" class="btn nav-button">
+                    Search
+                </button>
+            </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="viewProject.html " class="nav-link text-white-50">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="createProject.html" class="nav-link text-white-50">Submit</a>
+                </li>
+            </ul>
+
+            <li class="nav-item">
+                <a href="login.html" class="nav-link text-white-50">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="register.html" class="nav-link text-white-50">Sign Up</a>
+            </li>
+        </nav>
+        <br />
+        <br />
+        <div class="container">
+            <div class="row">
+                <h3 class="profile-name">Ajibola Agbeniga</h3>
+                <h3 class="profile-email">ajibola123@edconnect.ng</h3>
+            </div>
+            <div class="custom-jumbotron">
+                <ul class="row">
+                    <div class="col-4">
+                        <li>Program</li>
+                        <li>Software Engineering</li>
+                    </div>
+                    <div class="col-4">
+                        <li>
+                            Matriculation
+                        </li>
+                        <li>00/0000</li>
+                    </div>
+                    <div class="col-4">
+                        <li>Graduation Year</li>
+                        <li>2022</li>
+                    </div>
                 </ul>
             </div>
-            <div>
-                <h2>Update Profile</h2>
+            <h2>Update Profile</h2>
+            <hr />
+            <div class="sign-up">
                 <form>
-                    <label for="firstName">First Name :</label>
-                    <input type="text" name="firstName" id="" />
-                    <br /><br />
-                    <label for="lastName">Last Name :</label>
-                    <input type="text" name="lastName" id="" />
-                    <br /><br />
-                    <label for="email">Email Address :</label>
-                    <input type="email" name="email" id="" />
-                    <br /><br />
-                    <label for="password">Password :</label>
-                    <input type="password" name="password" id="" />
-                    <br /><br />
-                    <label for="matricNumber">Matric Number : </label>
-                    <input type="text" name="matricNumber" id="" />
-                    <br /><br />
-                    <label for="program">Program : </label>
-                    <select name="program" id="">
-                        <option value="computer_science">Computer Science</option>
-                        <option value="computer_information_systems">
-                            Computer Information Systems
-                        </option>
-                        <option value="computer_technology">Computer Technology</option>
-
-                    </select>
-                    <br /><br />
-                    <label for="year">Graduation Year :</label>
-                    <select name="graduationYear">
-                        <option value="2013">2013</option>
-                        <option value="2014">2014</option>
-                        <option value="2015">2015</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                    </select>
-                    <br /><br />
-                    <input type="submit" value="submit" />
+                    <div class="row">
+                        <div class="col-lg-6 form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" value="Ajibola" />
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control" value="Agbeniga" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" value="ajibola123@edconnect.ng" />
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label for="program">Program</label>
+                            <select name="program" class="form-control">
+                                <option value="computer science">Computer Science</option>
+                                <option value="Public Health">Public Health</option>
+                                <option value="Economics">Economics</option>
+                                <option value="Computer Infomation System">Computer Infomation System</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 form-group">
+                            <label for="matricNo">Matric Number</label><br />
+                            <input type="text" class="form-control" value="00/0000" />
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label for="year">Year</label><br />
+                            <select name="year" class="form-control">
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                            </select>
+                        </div>
+                        <!-- </div>
+            </div> -->
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Update Profile
+                    </button>
                 </form>
             </div>
-            <div>
-                <h2>Change Password</h2>
-                <form>
+            <br />
+            <br />
 
-                    <label for="currentPassword">Current Password :</label>
-                    <input type="password" name="currentPassword" id="" />
-                    <br /><br />
-                    <label for="newPassword">New Password :</label>
-                    <input type="password" name="newPassword" id="" />
-                    <br /><br />
-                    <label for="confirmPassword">Comfirm Password :</label>
-                    <input type="password" name="confirmPassword" id="" />
-                    <br /><br />
-                    <input type="submit" value="submit" />
+            <h2>Change Password</h2>
+            <hr />
+            <div class="sign-up">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-4 form-group">
+                            <label for="current-password">Current Password</label>
+                            <input type="password" class="form-control" placeholder="Current Password" />
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="new-password">New Password</label>
+                            <input type="password" class="form-control" placeholder="Your New Password" />
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm new password" />
+                        </div>
+                    </div>
+                    <div class="button:submit btn btn-primary">
+                        Change Password
+                    </div>
                 </form>
             </div>
-        </main>
+            <footer>Project Explorer &copy 2020 <strong>Edconnect</strong></footer>
+        </div>
     </body>
 </html>
