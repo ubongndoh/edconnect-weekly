@@ -12,7 +12,7 @@
             <!-- <h2>One Stop Database for Final Year Projects</h2> -->
             <form action="" class="form-inline">
                 <input type="search" placeholder="Search Projects" class="form-control mr-sm-2" />
-                <button type="submit" class="btn nav-button">
+                <button type="submit" class="btn nav-button btn-outline-light">
                     Search
                 </button>
             </form>
@@ -54,7 +54,7 @@
                         <li>04/04/2020</li>
                     </div>
                     <div class="col-3 text-right">
-                        <a href="editProject.html"></a>
+                        <a href="editproject.html"></a>
                         <button class="btn btn-primary">
 
                             View Project
@@ -72,7 +72,7 @@
                         <div class="form-group">
                             <label for="Project-name">Project Name</label>
 
-                            <input type="text" value="Project 4" class="form-control" />
+                            <input type="text" value="Project 4" name="projectName" class="form-control" />
                         </div>
                         <div class="form-group">
                             <label for="Project-abstract">Project Abstarct</label>
@@ -84,12 +84,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores atque praese
                         <div class="form-group">
                             <label for="Authors">Author(s)</label>
 
-                            <input type="text" value="Ade Chris" class="form-control" />
+                            <input type="text" value="Ade Chris" name="authors" class="form-control" />
                         </div>
                         <div class="form-group">
                             <label for="tag">Tag(s)</label>
 
-                            <input type="text" value="#web" class="form-control" />
+                            <input type="text" value="#web" name="tags" class="form-control" />
                         </div>
                         <button type="submit" class="btn btn-primary">
                             Save
@@ -101,8 +101,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores atque praese
 
                     <input type="file" value="Click to open file browser" class="form-control " />
                     <br>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-secondary">
+                    <ul class="list-group card">
+                        <li class="list-group-item list-group-item-secondary card-header">
                             Project Files
                         </li>
                         <li class="list-group-item text-center">
