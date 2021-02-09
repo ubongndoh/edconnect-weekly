@@ -1,62 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homepage</title>
+        <title>View Project</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body>
-        <header>
-            <h1>
-                Project Explorer
-            </h1>
-            <h2>
-                One Stop Database For Academic Projects
-            </h2>
-        </header>
-        <nav>
-            <a href="index.html"> Home</a>
-            <a href="search.html">Projects</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-            <a href="createproject.html">Submit</a>
-        </nav>
-        <main>
-            <div>
-                <h1>Project 1</h1>
-                <a href="editProject.html">
-                    Edit Project
-                </a>
-                <ul>
-                    <li>Created By: John Doe</li>
-                    <li>
-                        Date Created: 03/03/2020
-                    </li>
-                    <li>Last Updated: 04/04/2020</li>
-                </ul>
-            </div>
-            <div>
-                <h1>Project Abstract</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eum.
-                    Reiciendis ex maxime, corrupti culpa nam impedit placeat quam quidem
-                    iusto. Rerum quisquam ipsam eligendi harum numquam minima, quis molestias
-                    magnam quaerat maiores, ratione porro voluptatum nemo non iusto error,
-                    aliquid molestiae enim! Officiis animi quo omnis pariatur blanditiis
-                    nobis!
-                </p>
 
-            </div>
-            <div>
-                <h1>
-                    Project Details
-                </h1>
-                <ul>
-                    <li>Authors: John Doe, Brian James</li>
-                    <li>Tag(s): #HTML, #CSS3</li>
-                    <li>Project Files: <a href="#">File 1</a>, <a href="#">File 2</a></li>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-primary">
+            <h1 class="text-light title">Project Explorer</h1>
+            <!-- <h2>One Stop Database for Final Year Projects</h2> -->
+            <form action="" class="form-inline">
+                <input type="search" placeholder="Search Projects" class="form-control mr-sm-2" />
+                <button type="submit" class="btn nav-button">
+                    Search
+                </button>
+            </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="viewProject.html " class="nav-link text-white-50">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="createProject.html" class="nav-link text-white-50">Submit</a>
+                </li>
+            </ul>
+
+            <li class="nav-item">
+                <a href="login.html" class="nav-link text-white-50">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="register.html" class="nav-link text-white-50">Sign Up</a>
+            </li>
+        </nav>
+        <div class="container">
+            <h2>Project 4</h2>
+            <div class="custom-jumbotron">
+                <ul class="row align-items-center">
+                    <div class="col-3">
+                        <li>Created By</li>
+                        <li>Ade Chris</li>
+                    </div>
+                    <div class="col-3">
+                        <li>
+                            Date Created
+                        </li>
+                        <li>03/03/2020</li>
+                    </div>
+                    <div class="col-3">
+                        <li>Last Updated</li>
+                        <li>04/04/2020</li>
+                    </div>
+                    <div class="col-3">
+                        <a href="editproject.html"></a>
+                        <button class="btn btn-primary">
+
+                            Edit Project
+
+                        </button>
+                        </a>
+                    </div>
                 </ul>
             </div>
-        </main>
+
+            <div class="row">
+                <div class="col-6">
+                    <h2>Project Abstract</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eum.
+                        Reiciendis ex maxime, corrupti culpa nam impedit placeat quam quidem
+                        iusto. Rerum quisquam ipsam eligendi harum numquam minima, quis
+                        molestias magnam quaerat maiores, ratione porro voluptatum nemo non
+                        iusto error, aliquid molestiae enim! Officiis animi quo omnis
+                        pariatur blanditiis nobis!
+                    </p>
+                    <div>
+                        <h2>Comments</h2>
+                        <textarea name="comments" placeholder="leave a comment" id="" cols="50" rows="10"></textarea>
+                    </div>
+                    <hr>
+                    <p>No comments yet</p>
+                </div>
+                <div class="col-6">
+                    <h2>
+                        Project Details
+                    </h2>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-secondary">Author(s)</li>
+                        <li class="list-group-item">Ade Chris</li>
+                        <li class="list-group-item list-group-item-secondary text-primary">#web</li>
+
+
+                    </ul>
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-secondary">
+                            Project Files
+                        </li>
+                        <li class="list-group-item text-center">
+                            No File uploaded yet
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>Project Explorer &copy 2020 <strong>Edconnect</strong></footer>
+        </div>
     </body>
 </html>
