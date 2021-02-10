@@ -34,92 +34,88 @@
         </nav>
         <br />
         <br />
-        <div class="container">
-            <h2>Photo Gallery</h2>
-            <br />
-            <div class="custom-jumbotron">
-                <form name="searchForm">
-                    <ul class="row">
-                        <div class="col-6">
-                            <input placeholder="Search project name, authors, abstract, tags" name="searchTerm"
-                                type="text" class="form-control form-control-lg bg-light p-3" />
-                        </div>
-                        <div class="">
-                            <button type="submit" class="btn">
-                                Search by
-                            </button>
-                        </div>
-                        <div class="">
-                            <select name="searchTerm" class="form-control">
-                                <option value="name">name</option>
-                            </select>
-                        </div>
-                        <div class="">
-                            <button type="submit" class="btn btn-primary">
-                                Search by
-                            </button>
-                        </div>
-                    </ul>
-                </form>
-            </div>
-            <div class="row">
-                <h2>All Projects</h2>
-                <p>(3 results)</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 card text-left">
-                    <div class="card-body project-list">
-                        <h3 class="text-primary">Project 1</h3>
-
-                        <li>Larry James, Bola IGE</li>
-                        <p>
-                            Description: Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa rerum distinctio illum dolorum cum, voluptates
-                            inventore necessitatibus in porro impedit quo praesentium, modi
-                            accusamus blanditiis expedita maxime atque nihil adipisci.
-                        </p>
-                        <li class="text-primary">
-                            <a href="#" class="card-link">#html</a>
-                            <a href="#" class="card-link">#Javascript</a>
-                        </li>
+        <div class="my-3 container">
+            <h3 class="mt-5">Project Gallery</h3>
+            <div class="container">
+                <div class="p-3 mt-3 mb-5 bg-light text-dark row">
+                    <div class="col">
+                        <form method="get" action="/projects" class="">
+                            <div class="mt-2 form-row">
+                                <div class="col">
+                                    <input placeholder="Search project name, authors, abstract, tags" name="searchTerm"
+                                        type="text" class="form-control form-control-lg" />
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Search by</span>
+                                        </div>
+                                        <select class="form-control form-control-lg" name="searchCategory">
+                                            <option value="Name" selected="">Name</option>
+                                            <option value="Abstract">Abstract</option>
+                                            <option value="Authors">Authors</option>
+                                            <option value="Tags">Tags</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 card text-left">
-                    <div class="card-body project-list">
-                        <h3 class="text-primary">Project 2</h3>
-
-                        <li>Ben Bruce, John Boe</li>
-                        <p>
-                            Description: Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa rerum distinctio illum dolorum cum, voluptates
-                            inventore necessitatibus in porro impedit quo praesentium, modi
-                            accusamus blanditiis expedita maxime atque nihil adipisci.
-                        </p>
-                        <li class="text-primary">
-                            <a href="" class="card-link">#css</a>
-                            <a href="" class="card-link"> #html</a>
-                        </li>
-                    </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col">
+                    <h5>All Projects <small class="text-muted">(0 results)</small></h5>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-left card">
-                    <div class="card-body project-list">
-                        <h3 class="text-primary">Project 3</h3>
+            </div>
+            <div class="px-0 mb-3 container">
+                <div class="d-flex flex-row">
+                    <div class="card" style="width: 16rem; margin-right: 10px">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="viewProject.html">Project Title</a>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Author 1, Author 2
+                            </h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <div class="d-flex flex-row">
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
 
-                        <li>Fried Lim, Tola Daniel</li>
-                        <p>
-                            Description: Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa rerum distinctio illum dolorum cum, voluptates
-                            inventore necessitatibus in porro impedit quo praesentium, modi
-                            accusamus blanditiis expedita maxime atque nihil adipisci.
-                        </p>
-                        <li class="text-primary">
-                            <a href="" class="card-link">#ejs</a>
-                            <a href="" class="card-link">#Nodejs</a>
-                        </li>
+                    <div class="card" style="width: 16rem; margin-right: 10px">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="viewProject.html">Project Title</a>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Author 1, Author 2
+                            </h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <div class="d-flex flex-row">
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <footer>Project Explorer &copy 2020 <strong>Edconnect</strong></footer>
     </body>
 </html>
